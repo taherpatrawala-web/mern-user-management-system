@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.login-card {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.login-left {
+  flex: 1;
+  background-image: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.login-right {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 35px;
+}
+
+.input-group-custom {
+  margin-bottom: 20px;
+}
+
+.input-group-custom label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-group-custom input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-group-custom input:focus {
+  border-color: #2563eb;
+}
+
+.remember-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+.demo-credentials {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f3f4f6;
+}
+
+.demo-credentials p {
+  margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+  .login-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-left {
+    height: 250px;
+  }
+
+  .login-right {
+    padding: 30px;
+  }
+}
